@@ -2,4 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /vagrant/test-deploy
+    destination: /test_upgrade/
+hooks:
+  AfterInstall:
+    - location: scripts/afterInstall.sh
