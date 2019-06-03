@@ -9,9 +9,12 @@ replaceSoftware()
 {
     rm -rf "$DESTINATION_FOLDER";
     mkdir -p "$DESTINATION_FOLDER";
-    cp -rf "$SOURCE_FOLDER/*" "$DESTINATION_FOLDER";   
+    cp -rf "$SOURCE_FOLDER/." "$DESTINATION_FOLDER";   
     return $?;
 }
 
 replaceSoftware; 
 exit $?;
+
+
+
