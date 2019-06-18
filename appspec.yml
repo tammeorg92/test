@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /mptSW/
+    destination: /nestSW/
 hooks:
   AfterInstall:
     - location: scripts/afterInstall.sh
